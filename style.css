@@ -1,0 +1,174 @@
+:root {
+    --primary: #2563eb;
+    --primary-dark: #1d4ed8;
+    --secondary: #0f172a;
+    --muted: #64748b;
+    --light-bg: #f8fafc;
+    --card-border: #e2e8f0;
+    --success: #16a34a;
+    --warning: #f59e0b;
+    --danger: #dc2626;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Vazirmatn", "Tahoma", sans-serif;
+    background: var(--light-bg);
+    color: var(--secondary);
+    line-height: 1.8;
+}
+
+.site-navbar {
+    background: rgba(255, 255, 255, 0.96);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--card-border);
+}
+
+.brand-badge {
+    width: 42px;
+    height: 42px;
+    border-radius: 14px;
+    background: linear-gradient(135deg, var(--primary), #38bdf8);
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+}
+
+.hero-section {
+    min-height: 78vh;
+    display: flex;
+    align-items: center;
+    background:
+        radial-gradient(circle at top left, rgba(37, 99, 235, 0.18), transparent 34%),
+        linear-gradient(135deg, #eff6ff 0%, #ffffff 45%, #f8fafc 100%);
+}
+
+.hero-card,
+.app-card {
+    border: 1px solid var(--card-border);
+    border-radius: 24px;
+    box-shadow: 0 18px 45px rgba(15, 23, 42, 0.08);
+    background: #fff;
+}
+
+.feature-icon {
+    width: 54px;
+    height: 54px;
+    border-radius: 18px;
+    background: #dbeafe;
+    color: var(--primary);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.45rem;
+}
+
+.btn-primary {
+    background: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-primary:hover {
+    background: var(--primary-dark);
+    border-color: var(--primary-dark);
+}
+
+.auth-wrapper {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, #dbeafe, #f8fafc 55%, #ffffff);
+}
+
+.auth-card {
+    max-width: 480px;
+    margin: auto;
+    border: 1px solid var(--card-border);
+    border-radius: 24px;
+    background: #fff;
+    box-shadow: 0 18px 45px rgba(15, 23, 42, 0.08);
+}
+
+.dashboard-shell {
+    min-height: 100vh;
+}
+
+.sidebar {
+    background: #0f172a;
+    color: #cbd5e1;
+    min-height: 100vh;
+    border-radius: 0 0 0 28px;
+}
+
+.sidebar .nav-link {
+    color: #cbd5e1;
+    border-radius: 14px;
+    padding: 0.75rem 1rem;
+    margin-bottom: 0.35rem;
+}
+
+.sidebar .nav-link:hover,
+.sidebar .nav-link.active {
+    background: rgba(37, 99, 235, 0.22);
+    color: #fff;
+}
+
+.stat-card {
+    border: 1px solid var(--card-border);
+    border-radius: 20px;
+    background: #fff;
+    padding: 1.25rem;
+}
+
+.status-pill {
+    border-radius: 999px;
+    padding: 0.35rem 0.75rem;
+    font-size: 0.85rem;
+}
+
+.status-success {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.status-warning {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+.status-danger {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+.footer {
+    background: #0f172a;
+    color: #cbd5e1;
+}
+
+.table > :not(caption) > * > * {
+    padding: 1rem;
+}
+
+.form-control,
+.form-select {
+    border-radius: 14px;
+    padding: 0.75rem 1rem;
+}
+
+@media (max-width: 991px) {
+    .sidebar {
+        min-height: auto;
+        border-radius: 0;
+    }
+
+    .hero-section {
+        min-height: auto;
+        padding: 5rem 0;
+    }
+}
